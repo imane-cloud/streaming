@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Room</title>
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/lobby.css">
+        
+</head>
+<body>
+    <header id="nav">
+        <div class="nav--list">
+           
+           <a href="lobby.html">
+               <h3 id="logo">
+                 <img src="./images/logo.png" alt="Site Logo">
+        <span>Mumble</span>
+ </h3>
+</a>
+        </div>
+        
+
+
+        <div id="nav--links">
+            
+             <a class="nav_link" href="lobby.html">
+        Lobby
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+ fill="#ede0e0" ></svg> 
+    </a>
+    <a class="nav_link" id="create_room__btn" href="create.html">
+        Create Room
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+ fill="#ede0e0" ></svg> 
+ </a>
+        </div>
+    </header>
+
+    <section class="hero__section">
+        <h2>Interactive Chat & Streaming</h2>
+        <div class="hero__section__img">
+            <img src="./images/hero.png">
+        </div> 
+    </section>
+
+      <main>
+              <section id="room__list">
+                    <h3 id="room__listTitle">Live Now</h3>
+                    <div class="room__container">
+                        <div class="room__item">
+                            <img src="./images/stream-1.png" alt="Room Image">
+                            <div class="room__content">
+                                <p class="room__meta">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"></svg>
+                                    <span>135 Watching</span>
+                                </p>
+                                <h4 class="room__title">Ferdaous & Hibatlah Review</h4>
+                                <div class="room__box">
+                                    <div class="room__author">
+                                       <img class="avatar__md" src="images/2.jpg">
+                                       <strong class="message__author">Ferdaous Azhari</strong>
+                                    </div>
+                                    <a class="room__action" href="room.video.html"></a>
+
+
+                                </div>
+
+                            </div>                        </div>
+                    </div>
+                <div class="room__item">
+                        <img src="./images/stream-2.jpg" alt="Room Image">
+                    <div class="room__content">
+                            <p class="room__meta">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" ></svg>
+                                <span>15 Watching</span>
+                            </p>
+                            <h4 class="room__title">Building A Video Chat Application</h4>
+                        <div class="room__box">
+                            <div class="room__author">
+                                <img class="avatar__md" src="images/1.jpg">
+                                <strong class="message__author">Sulamita</strong>
+                            </div>
+                            <a class="room__action" href="room-video.html"> </a>
+                        </div>                        
+                    </div>
+    
+                </div>
+                <div class="room__item">
+                    <img src="./images/stream-3.jpg" alt="Room Image">
+                    <div class="room__content">
+                        <p class="room__meta">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"></svg>
+                            <span>1.5k Watching</span>
+                        </p>
+                        <h4 class="room__title">Ferdaous & Hibatlah Review</h4>
+                        <div class="room__box">
+                            <div class="room__author">
+                                <img class="avatar__md" src="images/3.png">
+                                <strong class="message__author">Shahriar</strong>
+                            </div>
+                            <a class="room__action" href="room-video.html"> </a>
+                        </div> 
+                    </div>
+                </div>
+
+
+                <div class="room__item">
+                    <img src="./images/stream-1.png" alt="Room Image">
+                    <div class="room__content">
+                        <p class="room__meta">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"></svg>
+                            <span>731 Watching</span>
+                        </p>
+                        <h4 class="room__title">Ferdaous & Hibatlah Review</h4>
+                        <div class="room__box">
+                            <div class="room__author">
+                                <img class="avatar__md" src="images/6.png">
+                                <strong class="message__author">Jane Doe</strong>
+                            </div>
+                            <a class="room__action" href="room-video.html"> </a>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="room__item">
+                    <img src="./images/stream-3.jpg" alt="Room Image">
+                    <div class="room__content">
+                        <p class="room__meta">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"></svg>
+                            <span>12.7k Watching</span>
+                        </p>
+                        <h4 class="room__title">Django + React Notes App</h4>
+                        <div class="room__box">
+                            <div class="room__author">
+                                <img class="avatar__md" src="images/6.png">
+                                <strong class="message__author">Coding Technics</strong>
+                            </div>
+                            <a class="room__action" href="room-video.html"> </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            </section>
+ 
+      </main>
+    
+</body>
+<script  src="js/agora-rtm-sdk-1.4.4.js"></script>
+<script type="module" src="js/lobby.js"></script>
+</html>

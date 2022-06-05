@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Room</title>
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/room.css">
+        
+</head>
+<body>
+    <header id="nav">
+        <div class="nav--list">
+            <button id="members_button">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+ fill-rule="#ede0e0" ></svg> 
+    </button>
+    <a href="/">
+    <h3 id="logo">
+        <img src="./images/logo.png" alt="Site Logo">
+        <span>Mumble</span>
+ </h3>
+</a>
+        </div>
+        
+
+
+        <div id="nav--links">
+            <button id="chat_button">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+ fill-rule="#ede0e0" ></svg> 
+    </button>
+    <a class="nav_link" href="lobby.html">
+        Lobby
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+ fill="#ede0e0" ></svg> 
+    </a>
+    <a class="nav_link" id="create_room__btn" href="join.html">
+        Create Room
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+ fill="#ede0e0" ></svg> 
+ </a>
+        </div>
+    </header>
+
+      <main id="container">
+          <div class="room__container">
+              <section id="members__container">
+                  <div id="members__header">
+                      <p>Participants</p>
+                      <strong id="members__count">0</strong>
+                  </div>
+
+                  <div id="member__list"></div>
+              </section>
+               <section id="message__container">
+                   <div id="messages">
+                      <div class="message__wrapper">
+                          
+                          
+                      </div>   
+                   </div>
+
+
+                   <form id="message__form">
+                       <input type="text" name="message" placeholder="Send a message">
+
+                   </form>
+               </section>  
+          </div>
+      </main>
+    <!--section id="participants__container">
+        <div id ="participants__header">
+            <p>Room Members</p>
+            <p id="member__count">0</p>
+         </div>
+  
+    </section>
+
+    <section id="messages">
+    
+    </section>
+    <div id="form__container">
+        <form id="message__form">
+            <input type="text" required name="message"/>
+        </form>
+
+    </div-->
+    
+</body>
+<script  src="js/agora-rtm-sdk-1.4.4.js"></script>
+<script type="module" src="js/room.js"></script>
+</html>
